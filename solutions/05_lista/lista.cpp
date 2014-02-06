@@ -26,7 +26,7 @@ int main(){
 	};
 
 // To determine the number of elements in the array, we can divide the total size of the array by the size of the array element.
-int palabras = sizeof(list)/sizeof(int);
+int palabras = sizeof(list)/sizeof(char *);
 
 // To show the list, we run the array.
 for(int veces=0; veces < palabras; veces++)
