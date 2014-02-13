@@ -33,31 +33,31 @@ void error(char *argv){
 
 int power(int list[N], int exponent){
 
-    int base;
+    int result=1;
 
     for(int numero=0; numero<N; numero++){
-	for(int count=0; count<exponent; count++)
+    int valor = list[numero];
+	for(int count=1; count<exponent; count++){
 	    if (numero==0)
             list[numero] = 1;
-
-            list[numero+1] *= exponent;
+	    else{
+            list[numero] *= valor;
+	    }
     }
-    return list[N];
+    }
 }
 
 void fill_in(int list[N]){
     for(int count=0; count<N; count++)
 	list[count]= count+1;
-
 }
 
 int main(int argc, char *argv[]){
+if(argc!=2)
+    error(argv[0]);
 
     int list[N],
 	exponent = atoi(argv[1]);
-
-    if(argc!=2)
-	error(argv[0]);
 
     fill_in(list);
     power(list, exponent);
