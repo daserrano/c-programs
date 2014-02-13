@@ -38,7 +38,7 @@ int power(int list[N], int exponent){
     for(int numero=0; numero<N; numero++){
     int valor = list[numero];
 	for(int count=1; count<exponent; count++){
-	    if (numero==0)
+	    if (numero==0) //El numero 1 elevado a algo da siempre 1.
             list[numero] = 1;
 	    else{
             list[numero] *= valor;
@@ -46,21 +46,22 @@ int power(int list[N], int exponent){
     }
     }
 }
-
+// Se rellena con numeros del 1 al 16.
 void fill_in(int list[N]){
     for(int count=0; count<N; count++)
 	list[count]= count+1;
 }
 
 int main(int argc, char *argv[]){
+// El usuario debe introducir dos argumentos, el nombre del programa y el exponente.
 if(argc!=2)
     error(argv[0]);
 
     int list[N],
-	exponent = atoi(argv[1]);
+	exponent = atoi(argv[1]); //se convierte a entero.
 
-    fill_in(list);
-    power(list, exponent);
+    fill_in(list); //se rellena la matriz.
+    power(list, exponent); // Se expone el numero al exponente que indica el usuario.
 
     for(int contador=0; contador<N; contador++)
 	printf("%i ", list[contador]);
