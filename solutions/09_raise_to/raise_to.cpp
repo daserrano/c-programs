@@ -35,13 +35,13 @@ int power(int list[N], int exponent){
 
     int result=1;
 
-    for(int numero=0; numero<N; numero++){
-    int valor = list[numero];
+    for(int number=0; number<N; number++){
+    int value = list[number];
 	for(int count=1; count<exponent; count++){
-	    if (numero==0) //El numero 1 elevado a algo da siempre 1.
-            list[numero] = 1;
+	    if (number==0) //El numero 1 elevado a algo da siempre 1.
+            list[number] = 1;
 	    else{
-            list[numero] *= valor;
+            list[number] *= value;
 	    }
     }
     }
