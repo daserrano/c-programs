@@ -1,24 +1,26 @@
 #page{
-background-color: #D0D0D0; 
-width: 1200px;
+background-image: url('../images/background.png'); 
+/*width: 1200px; */
 border: 1px solid black;
 margin: 0 auto 0 auto;
 }
-#cabecera{
-background-color: #AAA;
-}
-img#logo{
-float: left;
 
+div#cabecera img{
+text-align: left;
+margin-left: 100px;
 }
-
 #informacion{
+float: right;
+font-family: times new roman;
 text-align: right;
+margin-right: 100px;
+}
+p.texto{
+font-size: 11px;
 }
 
 ul#menu{
 background-color: #00AA00;
-text-align: right;
 /*float: right; misma cosa que la linea anterior solo que aqui flota*/
 text-transform : uppercase;
 list-style-type: none;
@@ -38,4 +40,4 @@ ul#menu a:hover{
 background-color: yellow;    
 /*background-image: url('../images/ejem.png');*/
 
-}
+

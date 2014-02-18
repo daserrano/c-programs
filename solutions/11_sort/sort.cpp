@@ -20,7 +20,6 @@ char comparar_palabras(const char *list[]){
     primera = list[0];
     segunda = list[1];
     compara = strcmp(primera, segunda);
-    printf("%i \n", compara);
     if(compara == 0)
 	printf("Las palabras son iguales.");
     else{

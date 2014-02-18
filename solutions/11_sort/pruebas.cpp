@@ -5,7 +5,7 @@
 int main(int argc, char *argv[]){
 
     int compara=0;
-    const  char *nombre1= "abecedario", *nombre2="a";
+    const  char *nombre1= "abecedario", *nombre2="ba";
 
 
     compara = strcmp(nombre1, nombre2);
