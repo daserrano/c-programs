@@ -1,0 +1,41 @@
+#page{
+background-color: #D0D0D0; 
+width: 1200px;
+border: 1px solid black;
+margin: 0 auto 0 auto;
+}
+#cabecera{
+background-color: #AAA;
+}
+img#logo{
+float: left;
+
+}
+
+#informacion{
+text-align: right;
+}
+
+ul#menu{
+background-color: #00AA00;
+text-align: right;
+/*float: right; misma cosa que la linea anterior solo que aqui flota*/
+text-transform : uppercase;
+list-style-type: none;
+}
+
+ul#menu li{
+display: inline;
+margin: 0 3ex 0 3ex; /* ex = tamaño de una x */
+}
+
+ul#menu a{
+color: white;
+text-decoration: none;
+}
+
+ul#menu a:hover{
+background-color: yellow;    
+/*background-image: url('../images/ejem.png');*/
+
+}
