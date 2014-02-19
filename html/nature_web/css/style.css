@@ -9,13 +9,42 @@ div#cabecera img{
 text-align: left;
 margin-left: 100px;
 }
-#informacion{
+
+#informacion {
 float: right;
-font-family: times new roman;
+font-family: MyriadPro Regular/*ZurichBT RomanCondensed*/;
 text-align: right;
 margin-right: 100px;
 }
-p.texto{
+
+ul#submenu{
+float: right;
+list-style-type: none;
+text-transform: uppercase;
+}
+
+ul#submenu li{
+display: inline;
+text-align: right;
+margin: 0 ex 0 ex;
+padding: 0.5ex;
+font-size: 13px;
+}
+
+ul#submenu a{
+color: #00AA00;
+text-decoration: none;
+}
+
+ul#submenu a:hover{
+color: black;
+}
+
+span.numero{
+font-size: 20px;
+text-align: right;
+}
+span.texto{
 font-size: 11px;
 }
 
@@ -24,6 +53,8 @@ background-color: #00AA00;
 /*float: right; misma cosa que la linea anterior solo que aqui flota*/
 text-transform : uppercase;
 list-style-type: none;
+margin-left: 100px;
+margin-right: 100px;
 }
 
 ul#menu li{
@@ -32,12 +63,17 @@ margin: 0 3ex 0 3ex; /* ex = tamaño de una x */
 }
 
 ul#menu a{
+font-family: MyriadPro Regular;
 color: white;
 text-decoration: none;
 }
 
 ul#menu a:hover{
-background-color: yellow;    
+color: black;    
 /*background-image: url('../images/ejem.png');*/
+
+/* FIN DEL ENCABEZADO */
+
+
 
 
