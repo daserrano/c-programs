@@ -4,10 +4,10 @@ width: 1200px;
 margin: 0 auto 0 auto;
 border: 1px solid black;
 }
-#page div{
+/*#page div{
 border: 1px solid black;
-}
-#cabecera, #principal, #footer{
+}*/
+#cabecera, #home, #principal, #footer{
 margin: 0 105px 0 105px;
 }
 
@@ -59,7 +59,8 @@ background-image: url('../images/fondo_menu.png');
 text-transform : uppercase;
 list-style-type: none;
 height: 30px;
-	padding-top:10px;
+padding-top:10px;
+border-radius: 8px;
 }
 
 ul#menu li{
@@ -67,17 +68,78 @@ display: inline;
 }
 
 ul#menu a{
-padding-top: 20px;
 font-family: "ZurichBT BoldCondensed", "Times New Roman";
+font-size: 15px;
 color: white;
 text-decoration: none;
-margin-right: 23px;
+text-align: left;
+margin-right: 28px;
 }
 
 ul#menu a:hover{
 color: black;    
 }
 /* FIN DEL ENCABEZADO */
+
+div#home{
+text-align: left;
+color: #31A431;
+font-size: 12px;
+padding-left: 25px;
+padding-bottom: 7px;
+}
+
+/* INICIO DE PRINCIPAL */
+
+div#principal{
+background-color: white;
+border-radius: 10px;
+}
+
+div#main{
+padding: 17px 0 0 17px;
+width:705px;
+}
+
+div#portfolio{
+text-align: left;
+background-image: url("../images/pantalla.png");
+background-position: 70% 15% ;
+background-repeat; no-repeat;
+height: 265px;
+width: 705px;
+border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
