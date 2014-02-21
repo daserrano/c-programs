@@ -54,12 +54,12 @@ font-size: 11px;
 }
 
 ul#menu{
-background-color: #00AA00;
 background-image: url('../images/fondo_menu.png');
 /*float: right;  aqui flota*/
 text-transform : uppercase;
 list-style-type: none;
-height: 40px;
+height: 30px;
+	padding-top:10px;
 }
 
 ul#menu li{
@@ -67,16 +67,16 @@ display: inline;
 }
 
 ul#menu a{
+padding-top: 20px;
 font-family: "ZurichBT BoldCondensed", "Times New Roman";
 color: white;
 text-decoration: none;
-padding: 10px;
+margin-right: 23px;
 }
 
 ul#menu a:hover{
 color: black;    
-/*background-image: url('../images/ejem.png');*/
-
+}
 /* FIN DEL ENCABEZADO */
 
 
