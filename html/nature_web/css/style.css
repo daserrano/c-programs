@@ -1,24 +1,29 @@
 #page{
 background-image: url('../images/background.png'); 
-/*width: 1200px; */
-border: 1px solid black;
+width: 1200px; 
 margin: 0 auto 0 auto;
+border: 1px solid black;
 }
+#page div{
+border: 1px solid black;
+}
+#cabecera, #principal, #footer{
+margin: 0 105px 0 105px;
+}
+
 
 div#cabecera img{
 text-align: left;
-margin-left: 100px;
+float: left;
+       padding-left: 26px;
 }
 
 #informacion {
-float: right;
 font-family: MyriadPro Regular/*ZurichBT RomanCondensed*/;
 text-align: right;
-margin-right: 100px;
 }
 
 ul#submenu{
-float: right;
 list-style-type: none;
 text-transform: uppercase;
 }
@@ -50,22 +55,22 @@ font-size: 11px;
 
 ul#menu{
 background-color: #00AA00;
-/*float: right; misma cosa que la linea anterior solo que aqui flota*/
+background-image: url('../images/fondo_menu.png');
+/*float: right;  aqui flota*/
 text-transform : uppercase;
 list-style-type: none;
-margin-left: 100px;
-margin-right: 100px;
+height: 40px;
 }
 
 ul#menu li{
 display: inline;
-margin: 0 3ex 0 3ex; /* ex = tamaño de una x */
 }
 
 ul#menu a{
-font-family: MyriadPro Regular;
+font-family: "ZurichBT BoldCondensed", "Times New Roman";
 color: white;
 text-decoration: none;
+padding: 10px;
 }
 
 ul#menu a:hover{
@@ -73,7 +78,6 @@ color: black;
 /*background-image: url('../images/ejem.png');*/
 
 /* FIN DEL ENCABEZADO */
-
 
 
 
