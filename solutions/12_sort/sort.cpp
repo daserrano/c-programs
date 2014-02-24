@@ -1,36 +1,37 @@
 /*Print sorted. strcmp.
- 
- ```c
+
+  ```c
   int main(...) {
-   const char *list[] = { "yield", "yelp", "yellow"};
+  const char *list[] = { "yield", "yelp", "yellow"};
   ```
-*/
+ */
 
 #include <stdio.h>
 #include <stdlib.h>
 
 
-char *compara(const char *list[]){
-
-const char *puntero = *list ;
+void compara(const char *list[]){
 
 
+    for(int i=0;  i<3; i++){
+	const char *puntero = list[i] ;
 
-do{
-printf("%s \n", puntero);
-puntero++;
-
-}while(*puntero != '\0');
+	do{
+	printf("%c", *puntero);
+	puntero ++;
+	}while(*puntero != '\0');
+	printf("\n");
+    }
 
 }
 
 int main(int argc, char *argv[]){
 
-const char *list[] = { "yield", "yelp", "yellow"};
+    const char *list[] = { "yield", "yelp", "yellow"};
 
 
-compara(list);
+    compara(list);
 
 
-return EXIT_SUCCESS;
+    return EXIT_SUCCESS;
 }

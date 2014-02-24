@@ -103,7 +103,7 @@ width:705px;
 
 div#portfolio{
 text-align: left;
-background-image: url("../images/pantalla.png");
+background-image: url('../images/pantalla.png');
 background-position: 70% 15% ;
 background-repeat; no-repeat;
 height: 265px;
@@ -111,6 +111,16 @@ width: 705px;
 border-radius: 10px;
 }
 
+div#reclamo {
+font-family: Arial;
+width: 462px;
+font-size: 12px;
+text-align: left;
+}
+
+div#reclamo p a{
+color: #00AA00;
+}
 
 
 
