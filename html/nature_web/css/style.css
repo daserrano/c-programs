@@ -4,9 +4,9 @@ width: 1200px;
 margin: 0 auto 0 auto;
 border: 1px solid black;
 }
-/*#page div{
+#page div{
 border: 1px solid black;
-}*/
+}
 #cabecera, #home, #principal, #footer{
 margin: 0 105px 0 105px;
 }
@@ -113,15 +113,23 @@ border-radius: 10px;
 
 div#reclamo {
 font-family: Arial;
-width: 462px;
+/*width: 462px;*/
 font-size: 12px;
-text-align: left;
+/*text-align: left;*/
 }
 
+div#texto_reclamo{
+width: 440px;
+text-align: left;
+}
 div#reclamo p a{
 color: #00AA00;
 }
 
+div#reclamo img{
+width: 150px;
+text-align: right ;
+}
 
 
 
