@@ -120,31 +120,56 @@ text-align: left;
 background-color: black;
 opacity: 0.78;
 color: white;
-       font-family: Arial;
+font-family: Arial;
 
 }
 
-#control h3,h2,p{
-margin: 1ex;
+#control h3,h2,p,img{
+
+padding: 0 2ex 0 2ex;
+}
+
+#control p, #texto_reclamo p{
+font-size: 12px;
 }
 
 #control a{
     text-decoration: none;
 }
+
+#control ul{
+list-style-type: none;
+}
+
+#control ul li{
+display: inline;
+padding: 1.8ex;
+font-size: 12px;
+background-image: url('../images/shapes.png');
+background-repeat: no-repeat;
+background-position: 7px 9px;
+}
+
+#control ul li a{
+color: white;
+}
+
+#control  a:hover{
+background-image: url('../images/green_shape.png')background-image: url('../images/green_shapes.png');
+}
+
 div#reclamo {
 font-family: Arial;
-/*width: 462px;*/
-font-size: 12px;
-display: inline;
-/*text-align: left;*/
+height: 93px;
 }
 
 div#texto_reclamo{
-width: 440px;
+width: 490px;
 text-align: left;
+font-size: 12px;
 }
 
-.hipervinculo{
+.hipervinculo, #control h2{
 color: #00AA00;
 }
 
@@ -154,7 +179,7 @@ width: 175px;
 
 span#imagen_reclamo{
 float: right;
-margin-right: 10ex;
+margin-right: 5ex;
 position: relative;
-top: -20px;
+top: -30px;
 }
