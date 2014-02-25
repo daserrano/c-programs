@@ -87,7 +87,7 @@ color: #31A431;
 font-size: 12px;
 padding-left: 25px;
 padding-bottom: 7px;
-
+}
 
 /* INICIO DE PRINCIPAL */
 
@@ -114,14 +114,23 @@ overflow: hidden;
 
 #control{
 float: right;
-width: 300px; 
+width: 235px; 
 height: 265px;
-text-align: right;
+text-align: left;
 background-color: black;
 opacity: 0.78;
 color: white;
+       font-family: Arial;
+
 }
 
+#control h3,h2,p{
+margin: 1ex;
+}
+
+#control a{
+    text-decoration: none;
+}
 div#reclamo {
 font-family: Arial;
 /*width: 462px;*/
@@ -134,7 +143,8 @@ div#texto_reclamo{
 width: 440px;
 text-align: left;
 }
-div a{
+
+.hipervinculo{
 color: #00AA00;
 }
 
