@@ -91,6 +91,7 @@ padding-bottom: 7px;
 
 /* INICIO DE PRINCIPAL */
 
+
 div#principal{
 background-color: white;
 border-radius: 10px;
@@ -100,6 +101,8 @@ div#main{
 padding: 17px 0 0 17px;
 width:705px;
 }
+
+/* INICIO PORTFOLIO */
 
 div#portfolio{
 text-align: left;
@@ -121,12 +124,18 @@ background-color: black;
 opacity: 0.78;
 color: white;
 font-family: Arial;
-
 }
 
-#control h3,h2,p,img{
-
+#control h3,img{
 padding: 0 2ex 0 2ex;
+}
+
+#control p{
+padding: 0 2ex 0 3ex;
+}
+
+#control h2{
+padding-left: 1.5ex;
 }
 
 #control p, #texto_reclamo p{
@@ -134,33 +143,34 @@ font-size: 12px;
 }
 
 #control a{
-    text-decoration: none;
+text-decoration: none;
 }
 
 #control ul{
 list-style-type: none;
+padding-left: 1.5ex;
 }
 
 #control ul li{
 display: inline;
 padding: 1.8ex;
 font-size: 12px;
-background-image: url('../images/shapes.png');
+background-image: url('../images/boton_off.png');
 background-repeat: no-repeat;
-background-position: 7px 9px;
+background-position: center;
 }
 
 #control ul li a{
 color: white;
 }
 
-#control  a:hover{
-background-image: url('../images/green_shape.png')background-image: url('../images/green_shapes.png');
+#control  ul li:hover{
+background-image: url('../images/boton_on.png')
 }
 
 div#reclamo {
 font-family: Arial;
-height: 93px;
+	padding-bottom: 2ex;
 }
 
 div#texto_reclamo{
@@ -168,6 +178,12 @@ width: 490px;
 text-align: left;
 font-size: 12px;
 }
+
+#texto_reclamo p{
+line-height: 3.5ex;
+padding-bottom: 1ex;
+}
+
 
 .hipervinculo, #control h2{
 color: #00AA00;
@@ -183,3 +199,28 @@ margin-right: 5ex;
 position: relative;
 top: -30px;
 }
+
+/*FIN MAIN */
+
+/* INICIO CONTENIDO */
+
+#contenido{
+
+    padding-top: 0px;
+}
+
+#contenido ul#menu2{
+    padding-top: 0px;
+    padding-left: 0px;
+    text-align:  left;
+list-style-type: none;
+width: 705px;
+}
+
+#contenido ul li{
+width: 705px;
+display: inline;
+border: 1px solid;
+padding: 0ex 7ex 1ex 7ex ;
+}
+
