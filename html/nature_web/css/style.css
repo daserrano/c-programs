@@ -170,7 +170,7 @@ background-image: url('../images/boton_on.png')
 
 div#reclamo {
 font-family: Arial;
-	padding-bottom: 2ex;
+/*	padding-bottom: 2ex;*/
 }
 
 div#texto_reclamo{
@@ -191,6 +191,7 @@ color: #00AA00;
 
 div#reclamo img{
 width: 175px;
+margin-bottom: 0px;
 }
 
 span#imagen_reclamo{
@@ -205,12 +206,13 @@ top: -30px;
 /* INICIO CONTENIDO */
 
 #contenido{
-
     padding-top: 0px;
 }
 
 #contenido ul#menu2{
-    padding-top: 0px;
+background-image: url('../images/fondo_blanco.png');
+    margin-top: 0px;
+padding-top: 0px;
     padding-left: 0px;
     text-align:  left;
 list-style-type: none;
@@ -218,9 +220,22 @@ width: 705px;
 }
 
 #contenido ul li{
+
 width: 705px;
 display: inline;
-border: 1px solid;
+border: 1px solid grey;
 padding: 0ex 7ex 1ex 7ex ;
 }
 
+#contenido li a{
+text-decoration: none;
+color: black;
+}
+
+#contenido ul li:hover{
+background-image: url('../images/fondo_menu.png');
+}
+
+#contenido ul li a:hover{
+color: white;
+}
