@@ -170,7 +170,7 @@ background-image: url('../images/boton_on.png')
 
 div#reclamo {
 font-family: Arial;
-/*	padding-bottom: 2ex;*/
+        	padding-bottom: 2ex;
 }
 
 div#texto_reclamo{
@@ -206,36 +206,45 @@ top: -30px;
 /* INICIO CONTENIDO */
 
 #contenido{
-    padding-top: 0px;
+padding-top: 0px;
 }
 
 #contenido ul#menu2{
 background-image: url('../images/fondo_blanco.png');
-    margin-top: 0px;
 padding-top: 0px;
-    padding-left: 0px;
-    text-align:  left;
+padding-left: 0px;
+text-align:  left;
 list-style-type: none;
 width: 705px;
+                position: relative;
+                top: -26px;
 }
 
 #contenido ul li{
-
-width: 705px;
+          /*border-radius: 10px;*/
 display: inline;
 border: 1px solid grey;
-padding: 0ex 7ex 1ex 7ex ;
+width: 705px;
+padding: 1ex 6.5ex 1ex 6.5ex ;
 }
 
 #contenido li a{
 text-decoration: none;
 color: black;
+       padding-left: 0.5ex;
+}
+
+#contenido img{
+padding: 0px;
 }
 
 #contenido ul li:hover{
-background-image: url('../images/fondo_menu.png');
+background-image: url('../images/fondo_triangulo.png');
 }
 
 #contenido ul li a:hover{
 color: white;
 }
+
+
+
