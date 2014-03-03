@@ -97,8 +97,6 @@ text-align: left;
 border-radius: 10px;
 }
 
-#principal #search{
-}
 
 div#main{
 padding: 17px 0 0 17px;
@@ -220,6 +218,8 @@ text-align:  left;
 list-style-type: none;
 width: 705px;
 border-radius: 8px;
+z-index: 5;
+position: relative;
 }
 
 #contenido ul li{
@@ -355,7 +355,7 @@ text-align: left;
 #holiday, #quick, #login, #news{
 font-family: Arial;
 font-size: 12px;
-padding-top: 4px;
+padding-top: 2px;
 }
 
 .caja select, .caja_disabled select{
@@ -412,7 +412,6 @@ border-radius: 5px;
 
 #search hr{
 color: #FFFFFF;
-padding: 0px;
 }
 
 #login p, input#email{
@@ -440,9 +439,17 @@ background: url('../images/fondo_select.png');
 
 .news{
 width: 200px;
-padding-top: 0.5px;
 }
 
+#footer #historia{
+text-align: left;
+background-image: url('../images/fondo_pie.png');
+height: 40px;
+margin: 1px 3px 1px 10px; 
+color: white;
+border-top-right-radius: 8px;
+border-top-left-radius: 8px;
+ }
 
 
 
