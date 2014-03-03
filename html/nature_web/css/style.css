@@ -11,7 +11,6 @@ border: 1px solid black;
 margin: 0 105px 0 105px;
 }
 
-
 div#cabecera img{
 text-align: left;
 float: left;
@@ -94,7 +93,11 @@ padding-bottom: 7px;
 
 div#principal{
 background-color: white;
+text-align: left;
 border-radius: 10px;
+}
+
+#principal #search{
 }
 
 div#main{
@@ -216,16 +219,16 @@ padding-left: 0px;
 text-align:  left;
 list-style-type: none;
 width: 705px;
-                position: relative;
-                top: -26px;
+border-radius: 8px;
 }
 
 #contenido ul li{
           /*border-radius: 10px;*/
 display: inline;
 border: 1px solid grey;
-width: 705px;
-padding: 1ex 6.5ex 1ex 6.5ex ;
+padding: 1ex 6ex 1ex 6ex ;
+position: relative;
+top: -34px;
 }
 
 #contenido li a{
@@ -239,12 +242,207 @@ padding: 0px;
 }
 
 #contenido ul li:hover{
-background-image: url('../images/fondo_triangulo.png');
+background-image: url('../images/fondo_menu.png');
 }
 
 #contenido ul li a:hover{
 color: white;
 }
+
+#articulos{
+text-align: left;
+width: 705px;
+height: 500px;
+margin: 0 auto 0 auto;
+}
+
+div.articulo{
+width: 220px;
+height: 247px;
+float: left;
+margin: 0 7.5px 0 7.5px;
+/*display: inline;*/
+}
+
+.articulo p{
+font-size: 12px;
+font-family: Arial;
+}
+
+#imagen1{
+background-image: url('../images/africa.png');
+background-position: 87% 40%;
+background-repeat: no-repeat; 
+width: 200px;
+height: 98px;
+border: 5px solid #D5D6D5;
+border-radius: 7px;
+}
+
+/*.articulo img{
+width:200px;
+height: 98px;
+background-position: 82% 64%;
+background-repeat: no-repeat;
+}*/
+
+#imagen2{
+background-image: url('../images/america.png');
+background-position: 30% 50%;
+background-repeat: no-repeat; 
+width: 200px;
+height: 98px;
+border: 5px solid #D5D6D5;
+border-radius: 7px;
+}
+
+#imagen3{
+background-image: url('../images/antarctica.png');
+background-position: 30% 85%;
+background-repeat: no-repeat; 
+width: 200px;
+height: 98px;
+border: 5px solid #D5D6D5;
+border-radius: 7px;
+}
+
+#imagen4{
+background-image: url('../images/asia.png');
+background-position: 50% 25%;
+background-repeat: no-repeat; 
+width: 200px;
+height: 98px;
+border: 5px solid #D5D6D5;
+border-radius: 7px;
+}
+
+#imagen5{
+background-image: url('../images/australasia.png');
+background-position: 50% 55%;
+background-repeat: no-repeat; 
+width: 200px;
+height: 98px;
+border: 5px solid #D5D6D5;
+border-radius: 7px;
+}
+#imagen6{
+background-image: url('../images/europe.png');
+background-position: 20% 70%;
+background-repeat: no-repeat; 
+width: 200px;
+height: 98px;
+border: 5px solid #D5D6D5;
+border-radius: 7px;
+}
+
+/* FIN CONTENIDO */
+
+/* INICIO SEARCH */
+
+#search{
+background-color: #EEEBE4;
+padding: 10px 0px 10px 10px;
+margin: 1px;
+border: 1px solid #BBBBBB;
+border-top-right-radius: 8px;
+border-bottom-right-radius: 8px;
+float: right;
+width: 251px;
+text-align: left;
+
+}
+
+#holiday, #quick, #login, #news{
+font-family: Arial;
+font-size: 12px;
+padding-top: 4px;
+}
+
+.caja select, .caja_disabled select{
+ background: transparent;
+   width: 220px;
+   padding: 3px 0px 4px 9px;
+   font-size: 12px;
+   border: 1px solid black;
+   border-radius: 4px;
+   height: 25px;
+}
+
+.caja {
+   width: 200px;
+   overflow: hidden;
+   background: url('../images/flecha_select.png') no-repeat right;
+   border:none;
+} 
+
+.caja_disabled {
+   width: 200px;
+   overflow: hidden;
+   background: url('../images/flecha_disabled.png') no-repeat right;
+   border:none;
+} 
+
+#search_holidays input{
+width: 200px;
+text-align: left;
+padding-left: 15px;
+height: 32px;
+color: white;
+border: none;
+background: url('../images/search_holidays.png') no-repeat left;
+}
+
+#quick input#text{
+width: 120px;
+border-radius: 6px;
+border: 1px solid;
+font-size: 12px;
+padding: 3px 0px 4px 6px;
+background: url('../images/fondo_select.png');
+}
+
+input.boton{
+background: url('../images/fondo_quick.png') no-repeat center left;
+text-align: right;
+border: none;
+padding: 5px;
+color: white;
+border-radius: 5px;
+}
+
+#search hr{
+color: #FFFFFF;
+padding: 0px;
+}
+
+#login p, input#email{
+width: 190px;
+}
+
+#login input#email{
+border-radius: 6px;
+margin-bottom: 10px;
+border: 1px solid;
+font-size: 12px;
+padding: 3px 0px 4px 6px;
+background: url('../images/fondo_select.png');
+}
+
+#login input#name{
+width: 115px;
+border-radius: 6px;
+margin-bottom: 10px;
+border: 1px solid;
+font-size: 12px;
+padding: 3px 0px 4px 6px;
+background: url('../images/fondo_select.png');
+}
+
+.news{
+width: 200px;
+padding-top: 0.5px;
+}
+
 
 
 
