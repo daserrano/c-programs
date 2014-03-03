@@ -447,6 +447,7 @@ width: 200px;
 
 #footer{
 margin-top: 20px;
+height: 200px;
 background-color: #EEEBE4;
 }
 
@@ -465,6 +466,12 @@ text-align: center;
 
 }
 
+#redes{
+float: left;
+background:url('../images/twitter.png') no-repeat;
+background-position: 192px 13px;
+}
+
 .TipoLetra{
 color: #64522A;
 font-family: "Arial";
@@ -480,26 +487,27 @@ width: 220px;
 padding: 10px 10px 0px 20px;
 }
 
-
-#footer #redes, #link{
+#link{
 text-align: left;
+height: 160px;
+width: 520px;
+margin-left: 200px;
 }
 
-#redes, #link{
-text-align: left;
-display: inline;
+#link .TipoLetra{
+padding-left: 65px;
 }
 
 
 .link{
+text-align: left;
 color: #757268;
 font-family: "Arial";
 font-size: 12px;
-width: 220px;
 line-height: 17.5px;
 padding: 10px 10px 0px 20px;
 float: left;
 }
 
 #contact{
-float: left;
+float: right;
