@@ -21,7 +21,9 @@ int main(int argc, char *argv[]){
 
     for(int posicion=0; posicion < cantidad_palabras; posicion++){
 	for(int siguiente_palabra = posicion+1; siguiente_palabra < cantidad_palabras; cantidad_palabras++)
-   		comparador = strcmp(list[posicion], list[siguiente_palabra]);
+   	
+    	    comparador = strcmp(list[posicion], list[siguiente_palabra]);
+
 
     }
     printf(" %i \n", comparador);
