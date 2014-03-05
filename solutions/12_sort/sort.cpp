@@ -8,30 +8,23 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
-
-void compara(const char *list[]){
-
-
-    for(int i=0;  i<3; i++){
-	const char *puntero = list[i] ;
-
-	do{
-	printf("%c", *puntero);
-	puntero ++;
-	}while(*puntero != '\0');
-	printf("\n");
-    }
-
-}
 
 int main(int argc, char *argv[]){
 
     const char *list[] = { "yield", "yelp", "yellow"};
+    int cantidad_palabras=0, 
+	comparador=0;
 
+    cantidad_palabras =(sizeof(list)/sizeof(char *)); //Cuenta el numero de palabras que hay en lista.
 
-    compara(list);
+    for(int posicion=0; posicion < cantidad_palabras; posicion++){
+	for(int siguiente_palabra = posicion+1; siguiente_palabra < cantidad_palabras; cantidad_palabras++)
+   		comparador = strcmp(list[posicion], list[siguiente_palabra]);
 
+    }
+    printf(" %i \n", comparador);
 
     return EXIT_SUCCESS;
 }
