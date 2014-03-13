@@ -1,4 +1,4 @@
-// Write a program that outputs the border of a square, given the height
+// Write a program that outputs the border of a square, given the height 
 
 
 #include <stdio.h>
