@@ -17,7 +17,7 @@
   the_owl@eniac:~$ ./print_backwards
 
 # => .eripmav a si dlrow ehT
-```
+``` 
  */ 
 
 #include <stdio.h>
