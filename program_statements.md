@@ -242,13 +242,3 @@ int main() {
 }
 ```
 
-
-HTML
-====
-
-01 Links
---------
-
-Write a little example site having _css_, _docs_ and _images_ folders with an _index.html_. _index.html_ shall link 
-to _about.html_ and _quijote.html_ inside the _docs_ directory. These pages redirect **back** to _index.html_. The former carries us to a given anchor point inside _quijote.html_
-
