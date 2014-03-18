@@ -4,7 +4,6 @@
 
 void reparto(int jugadores[], int numero_jugadores, int numero_cartas){
 
-
     static int posicion = 0;
 
     for(int contador = numero_cartas; contador > 0; contador--) // With this algoritm, the players receive a card.
@@ -26,9 +25,12 @@ int main(int argc, char *argv[]){
 	numero_cartas = atoi(argv[2]); // Number of cards.
 
 
-    for(int contador = 0; contador < numero_jugadores; contador++) // Fill in the array.
+    /*  for(int contador = 0; contador < numero_jugadores; contador++) // Fill in the array.
 	jugadores[contador] = 0;
 
+	void *memset(void *s, int c, size_t n);
+     */
+    memset( jugadores, 0, sizeof(jugadores)); 
 
     reparto(jugadores, numero_jugadores, numero_cartas);
 
