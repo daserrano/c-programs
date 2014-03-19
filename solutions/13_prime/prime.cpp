@@ -8,7 +8,6 @@
 #define N 70
 
 
-
 void imprimir(int primes[N]){
 
     for(int contador=0; contador < N; contador++) // Imprimir la matriz.

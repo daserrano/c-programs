@@ -16,6 +16,7 @@ int main(int argc, char *argv[]){
 	for(int compara = posicion+1; compara < numero_palabras; compara++){
 	    comparacion = strcmp(list[posicion], list[compara]); // Comparacion de dos palabras. Con los dos FOR compara todas las palabras con todas.
 
+	    printf("%s %s = %i\n", list[posicion], list[compara], comparacion);
 	    if(comparacion > 0){ // Si la segunda palabra va ordenada antes
 
 		temporal = list[posicion]; // Con una variable temporal se guarda la palabra que hay en posicion.
