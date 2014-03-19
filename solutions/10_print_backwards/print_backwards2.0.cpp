@@ -18,7 +18,7 @@ int main(int argc, char *argv[]){
 	*end--;
 	printf("%c", *end);
 
-    }while(*end != *beginning);
+    }while(end != beginning);
 
 
     printf("\n");
