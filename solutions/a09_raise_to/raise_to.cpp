@@ -21,7 +21,7 @@ int main(int argc, char *argv[]){
 
     opterr = 0;
 
-    while(( c = getopt(argc, argv, "h")) != -1)
+    while(( c = getopt(argc, argv, "h:")) != -1)  // Se ponen dos puntos para indicar que es opcional.
 	switch(c){
 
 	    case 'h':
@@ -46,9 +46,6 @@ int main(int argc, char *argv[]){
     exponent = atoi(argv[2]);
 
     printf("%.2lf \n",  power(base, exponent));
-
-
-
 
     return EXIT_SUCCESS;
 }
