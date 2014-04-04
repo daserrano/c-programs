@@ -1,4 +1,4 @@
-/* Hacer una pila del tipo struct TPila o TStack.
+/* Hacer una pila del  tipo struct TPila o TStack.
  *
  *  Internamente tiene un array de MAX caracteres de tipo char
  *
@@ -27,7 +27,7 @@ struct TPila{
     char caracteres[MAX];
     int cima;
 
-};  
+};   
 
 enum TOpcion menu(){
 
@@ -53,14 +53,16 @@ void show(struct TPila pila){
 
 }
 
-void push(struct TPila pila, char caracter){
+void push(struct TPila *pila, char caracter){
 
-    // INCOMPLETE.
+
+    (*pila).caracteres[(*pila).cima++] = caracter;
 
 }
 
 void pop(const char *puntero){
 
+    printf("El ultimo caracter introducido es: %c \n\n", *puntero);
 }
 
 int main(int argc, char *argv[]){
@@ -78,29 +80,26 @@ int main(int argc, char *argv[]){
 	    case 1:
 		show(pila);
 		break;
-		
+
 	    case 2:
 		printf(" Introduce un caracter: ");
 		scanf(" %c", &caracter);
 
-		puntero = caracter; // It has an error.
+		puntero = &caracter;
 
-		push(pila, caracter); 
+		push(&pila, caracter); 
 
 		break;
 
 	    case 3:
 		pop(puntero);
+		break;
 
-
+	    case 4:
+		return EXIT_SUCCESS;
 
 	}
 
-
-
-    }while( opcion != 3);
-
-
-    return EXIT_SUCCESS;
+    }while( opcion != 4);
 
 }
