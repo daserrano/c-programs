@@ -46,8 +46,11 @@ enum TOpcion menu(){
 
 void show(struct TPila pila){
 
+    printf("_______\n");
     for(int index= 0; index < pila.cima ; index++)
-	printf("%c ", pila.caracteres[index]);
+	printf("| %2c  |\n", pila.caracteres[index]);
+
+    printf("_______\n");
 
     printf("\n");
 
