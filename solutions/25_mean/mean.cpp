@@ -7,8 +7,8 @@
 
 struct TAsignaturas{
 
-    int programacion;
-    int etica;
+    double programacion;
+    double etica;
 
 }; 
 
@@ -16,6 +16,7 @@ struct TAlumno{
 
     char nombre[MAX_CARACTERES];
     struct TAsignaturas asignaturas;
+    double media;
 
 } ;
 
@@ -31,11 +32,11 @@ void meter_datos(struct TAlumno alum[]){
 
 	printf("Nota Programacion: ");
 	__fpurge(stdin);
-	scanf(" %i", &alum[index].asignaturas.programacion);
+	scanf(" %lf", &alum[index].asignaturas.programacion);
 
 	printf("Nota Etica: ");
 	__fpurge(stdin);
-	scanf(" %i", &alum[index].asignaturas.etica);
+	scanf(" %lf", &alum[index].asignaturas.etica);
 
     }
 
@@ -63,11 +64,10 @@ double media_eti(struct TAlumno alum[]){
     return media_etica;
 } 
 
-double media_alum(struct TAlumno alum[]){
+void media_alum(struct TAlumno alum[MAX]){
 
-    double media_total[MAX];
     for(int index=0; index < MAX; index++)
-	media_total[index] = alum[index].asignaturas.programacion + alum[index].asignaturas.etica / 2;
+	alum[index].media = (alum[index].asignaturas.programacion + alum[index].asignaturas.etica) / 2;
 
 }
 
@@ -77,8 +77,8 @@ void imprimir(struct TAlumno alum[]){
 
     for(int index=0; index < MAX ; index++)
 	printf("Nombre Alumno: %s \n \
-		Programacion: %i \n \
-		Etica:        %i \n\n\n", alum[index].nombre, alum[index].asignaturas.programacion, alum[index].asignaturas.etica);
+		Programacion: %.2lf \n \
+		Etica:        %.2lf \n\n\n", alum[index].nombre, alum[index].asignaturas.programacion, alum[index].asignaturas.etica);
 
 } 
 
@@ -87,8 +87,7 @@ int main(int argc, char *argv[]){
     struct TAlumno alumnos[MAX];
 
     double media_programacion = 0,
-	   media_etica        = 0,
-	   media_alumno[MAX];
+	   media_etica        = 0;
 
 
     for(int index=0; index < MAX; index++){
@@ -101,7 +100,7 @@ int main(int argc, char *argv[]){
 
     media_etica = media_eti(alumnos) / MAX;
 
-    media_alumno = media_alum(alumnos);
+    media_alum(alumnos);
 
     imprimir(alumnos);
 
@@ -109,8 +108,9 @@ int main(int argc, char *argv[]){
     printf("La media de etica:         %.2lf \n\n", media_etica);
 
     for(int index=0; index < MAX; index++)
-    printf("La media de %s: %.2lf \n\n", alumnos[index].nombre, media_alumno[index]);
+    printf("La media de %s: %.2lf \n", alumnos[index].nombre, alumnos[index].media);
 
+    printf("\n");
     return EXIT_SUCCESS;
 
 }
