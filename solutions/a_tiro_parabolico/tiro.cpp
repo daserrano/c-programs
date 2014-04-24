@@ -25,8 +25,8 @@ int main(int argc, char *argv[]){
     printf("y: ");
     scanf(" %lf", &balon.velocidad.y);
 
-    balon.punto.x = 5;
-    balon.punto.y = 0;
+    balon.punto.x = 2;
+    balon.punto.y = 5;
 
     balon.aceleracion.x = 0;
     balon.aceleracion.y = -10;
@@ -39,16 +39,9 @@ int main(int argc, char *argv[]){
 	balon.punto.x += balon.velocidad.x * T;
 	balon.punto.y += balon.velocidad.y * T;
 
-
-	printf("Balon: (%.2lf, %.2lf) \n", balon.punto.x, balon.punto.y);
-
-
+	printf("Posicion x,y: %7.2lf , %7.2lf \n", balon.punto.x, balon.punto.y);
 
     }while(balon.punto.y > 0);
-
-
-    //printf("%.2lf km/h\n", balon.velocidad.x);
-
 
     return EXIT_SUCCESS;
 }
